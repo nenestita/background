@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        /* On force le GIF sur TOUTE la page, sans aucune bordure */
-        body, html {     margin: 0; padding: 0; width: 100%; height: 100%;     background: url(’https://xatimg.com/image/MbGcCOEqZkY6.gif’) no-repeat center center/cover;      display: flex; justify-content: center; align-items: center;     overflow: hidden; font-family: ’Trebuchet MS’, sans-serif; }
+        body, html {
+            margin: 0; 
+            padding: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: #121212; 
+            background-image: url('https://xatimg.com/image/MbGcCOEqZkY6.gif') !important;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            overflow: hidden; 
+            font-family: 'Trebuchet MS', sans-serif; 
         }
 
-        /* Cette partie est cruciale : elle dit à xat de cacher ses propres textes */
         #xat-header, .header, #xat-footer, .footer, .user-name, .user-id {
             display: none !important;
         }
 
-        /* Ton cadre violet style Birdy */
         .card {
             width: 550px;
             height: 350px;
-            background: rgba(0, 0, 0, 0.85); /* Noir semi-transparent */
+            background: rgba(0, 0, 0, 0.85);
             border: 2px solid #8a2be2;
             border-radius: 20px;
             padding: 20px;
@@ -45,7 +57,7 @@
 </head>
 <body>
     <div class="card">
-        <img src="https://xatimg.com/image/jErnhZ84UiT4.png" draggable=”false” class="pfp">
+        <img src="https://xatimg.com/image/jErnhZ84UiT4.png" draggable="false" class="pfp">
         <div class="name">Hi i'm Tita</div>
         <p class="desc">You can find me on xat.com/Blog, xat.com/Assistance and xat.com/Chat.</p>
         <p class="quote">deen over dunya</p>
